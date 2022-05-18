@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HOTEL GP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "images/logo.png" type = "image/png">
+    </head>
+    <body>
+
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span style="font-size:25px;">AIRA TRAVELS</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn" style="font-size:25px;">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>NICE AND COMFORTABLE PLACE TO STAY</h2>
+                <p>Let us help you get started. More than 100,000 hoteliers across 2,500 hotels around the world use AIRA TRAVELS. We combined our experience with customer feedback in this guide. </p>
+                <button type = "button" class = "head-btn"><a href = "#services" class="none">GET STARTED</a></button>
+            </div>
+        </header>
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">services</a></li>
+                <li><a href = "#rooms">rooms</a></li>
+                <li><a href = "#customers">customers</a></li>
+            </ul>
+            <button class = "btn sign-up">sign up</button>
+            <button class = "btn log-in">log in</button>
+        </div>
+        <div id = "modal"></div>
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h5>services</h5>
+            </div>
+            <div class = "services-container">
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Food Service/ Food Runner</h2>
+                        <p>A bright and inviting 24x7 multi-cuisine coffee shop that offers an eclectic all day dining menu including Indian, European, American and pan-Asian cuisine Indulge in the wholesome breakfast buffet served daily.<br> Choose from a wide range of popular Indian, South Indian, Asian and Western preparations</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Refreshment</h2>
+                        <p>Hotel offers 104 sharp and bold rooms with one room specially designed room for differently able guests. Room categories include Deluxe Room and Superior Room. The rooms come with a range of smart amenities including high-speed WiFi net access, LED TVs with satellite television, In Room Dining, telephone with global direct dial and voice mail, tea/coffee maker, working desk and chair.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Housekeeping</h2>
+                        <p>Finest housekeeping facilities are available at all the hotels. Hit the fully equipped Fitness Center and treat your body to an action packed workout. Head to the Activity Center that offers an array of entertainment options to keep you engaged in your free time. We also offer a 24x7 Cyber Kiosk with high speed WiFi.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Room Security</h2>
+                        <p>Finest housekeeping facilities are available at all the hotels. Hit the fully equipped Fitness Center and treat your body to an action packed workout. Head to the Activity Center that offers an array of entertainment options to keep you engaged in your free time. We also offer a 24x7 Cyber Kiosk with high speed WiFi.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+<br>
+<br><br>
+        <div class = "book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "Book Now">
+                </div>
+            </form>
+        </div>
+
+        <br>
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h5>rooms</h5>
+            </div>
+            <div class = "rooms-container">
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img1.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Fully furnished floor.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                24/7 first class room service.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Cost efficient.
+                            </li>
+                        </ul>
+                        <p> Set in New Delhi, 2.3 km from Lotus Temple and 5 km from Humayun's Tomb, Raas Fully Furnished 1BHK Independent Apartment 5 in Greater Kailash - 1 offers accommodation with free WiFi, air conditioning...<br><br>
+                            This apartment includes 1 bedroom, a living room and a flat-screen TV, an equipped kitchen with a dining area, and 2 bathrooms with a shower and a washing machine. Towels and bed linen are featured in this accommodation.
+                        </p>
+                        <p class = "rate">
+                            <span>1000/- </span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img2.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Fully furnished floor.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                24/7 first class room service.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Cost efficient.
+                            </li>
+                        </ul>
+                        <p>Located within just 6 km from the historic India Gate and the famous Connaught Place, Hotel Samrat provides 24-hour front desk for the convenience of the guests. It offers free WiFi.
+
+                            Offering garden and pool view, the modern and elegant air-conditioned rooms have flat-screen cable TV, seating area and work desk.<br><br><br> They feature a refrigerator and electric kettle. The attached bathrooms come with free toiletries, a hairdryer and shower.
+                            </p>
+                        <p class = "rate">
+                            <span>1500/- </span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img3.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Fully furnished floor.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                24/7 first class room service.
+                            </li>
+                            <li>
+                                <i class = "fas fa-arrow-alt-circle-right"></i>
+                                Cost efficient.
+                            </li>
+                        </ul>
+                        <p>Located in the millennium city, the hotel is just off the Golf Course Extension Road and a short distance from the key business hubs that house a plethora of MNC’s like Genpact, American Express, Samsung and Dell, to name a few. It is also in close proximity to ASF Insignia Business Center on Faridabad road, and the new commercial area of Sector 63, Gurugram.
+
+                            Strategically nestled between high-end residential societies, it offers easy access to HUDA Metro Station, Leisure Valley and Sector 29, the entertainment district of the city, besides being 20 minutes away from Signature Tower, IFFCO Chowk and the Mall mile on MG Road.</p>
+                        <p class = "rate">
+                            <span>2000/- </span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h5>customers</h5>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>We Loved it</h3>
+                        <p>Hotel Arthur is a perfect place to stay in Helsinki. It is close to the center and the railway station. The room was very pleasant, it was cozy and clean. Breakfast was excellent and incredibly varied.</p>
+                        <img src = "images/cus1.jpg" alt = "customer image">
+                        <span>Customer Name, Country</span>
+                    </div>
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Comfortable Living</h3>
+                        <p>The hotel team has always been friendly, patient and helpful. That impressed me the most. No matter what time of day or night, you could turn to them with all your concerns.</p>
+                        <img src = "images/cus2.jpg" alt = "customer image">
+                        <span>Customer Name, Country</span>
+                    </div>
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Nice Place</h3>
+                        <p>The hotel team has always been friendly, patient and helpful. That impressed me the most. No matter what time of day or night, you could turn to them with all your concerns.</p>
+                        <img src = "images/cus3.jpg" alt = "customer image">
+                        <span>Customer Name, Country</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>Join our guest rewards program to avail exciting benefits every time you book to stay with us and get member exclusive offers ...</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "#">Blog</a>
+                    <a href = "#">Rooms</a>
+                    <a href = "#">Subscription</a>
+                    <a href = "#">Gift Card</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Career</a>
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact Us</a>
+                    <a href = "#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            203 Fake St.Mountain View, San Francisco, California, USA
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +84545 37534 48
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            info@domain.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
