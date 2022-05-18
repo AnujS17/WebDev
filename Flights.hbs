@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Aira Travels</title>
+    <link rel="stylesheet" href="Flightscss.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  <body>
+    <div class="the-title">
+        <p>Aira Travels</p>
+    </div>
+    <nav>
+        <div class="nav-links">
+            <ul>
+              <li><a href="">Flights</a></li>
+              <li><a href="hotels.hbs">Hotels</a></li>
+              <li><a href="sign-in.html"><button class="bluei">Sign in</button></a></li>
+            </ul>
+            <hr size="2px" color="black">
+        </div>
+    </nav>
+   <div style="padding:20px;">
+    <form>
+        <select id="sel" onchange="show(this)">
+        <option value ="" selected disabled hidden>  Arrival Country</option>
+        <!-- <option value="au">Australia</option>
+        <option value="ca">Canada</option>
+        <option value="usa">USA</option> -->
+        </select>
+      </form>
+
+      <form class="drr1" style="padding:0 30px;">
+        <select id="country1" name="country">
+         <option value="none" selected disabled hidden>Number of Passengers</option>
+        <option value="ca">1</option>
+        <option value="au">2</option>
+        <option value="usa">3</option>
+        <option value="usa">3</option>
+        <option value="usa">4</option>
+        <option value="usa">More than 4 (mention during checkout)</option>
+
+        </select>
+      </form>
+
+      <form class="drr2" style="padding:0 10px;">
+        <select id="sel1" onchange="show(this)">
+         <option value="" selected disabled hidden>Departure Country</option>
+        <!-- <option value="ca">Canada</option>
+        <option value="au">Australia</option>
+        <option value="usa">USA</option> -->
+        </select>
+      </form>
+  </div>
+
+  <div class="search2">
+  <a href="passengerinfo.html"><button class="bluei" style="margin-left:100px; margin-top:-90px;">Proceed</button></a>
+  </div>
+  <div class="dropdown2">
+        <form class="drr3">
+          <select id="country" name="country">
+          <option value="none" selected disabled hidden>Flight Type</option>
+          <option value="ca">international</option>
+          <option value="usa">Domestic</option>
+          </select>
+        </form>
+        <form class="drr4">
+          <select id="country" name="country">
+          <option value="none" selected disabled hidden>Meals</option>
+          <option value="ca">Veg Combos</option>
+          <option value="usa">Non-Veg Combos</option>
+          </select>
+        </form>
+        <form class="drr5">
+          <select id="country" name="country">
+          <option value="none" selected disabled hidden>Times</option>
+          <option value="ca">Morning</option>
+          <option value="usa">Afternoon</option>
+          <option value="au">Evening</option>
+          </select>
+        </form>
+        <form class="drr6">
+          <select id="country" name="country">
+          <option value="none" selected disabled hidden>Seat Class</option>
+          <option value="ca">First Class</option>
+          <option value="usa">Business Class</option>
+          <option value="usa">Economy Class</option>
+          </select>
+        </form>
+        <form class="drr7">
+          <select id="country" name="country">
+          <option value="au">More offers</option>
+          <option value="ca">Aira deals</option>
+          <option value="usa">other coupon offers</option>
+          </select>
+        </form>
+      </div>
+      <p class="departing-phrase">Choose a departing flight</p>
+  <div class="graph">
+    <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size:20px; ">Price History</p>
+    <img src="img11.png" width="400px">
+  </div>
+    <div class="outer-div">
+      <div class="inner-div1">
+        <a href="travels.html">
+          <table cellspacing="2" id="">
+            <tr>
+              <td><img src="Japan Airlines.jpeg" width="100%"></td>
+              <th>16h 45m
+              <p class="airlines">Japan Airlines</p></th>
+              <th>7:00AM - 4:15PM
+              <p class="airlines">British Columbia - Ontario</p></th>
+              <th>1 stop
+              <p class="airlines">50m in HKG</p></th>
+              <th>$624
+              <p class="airlines">round trip</p></th>
+            </tr>
+          </table>
+          <hr class="hr1"></hr>
+        </a>
+      </div>
+    <div class="inner-div2">
+      <a href="travels.html">
+        <table cellspacing="2">
+          <tr>
+            <td><img src="Hawaiian_Airlines_Logo.jpg" width="100%"></td>
+            <th>16h 45m
+            <p class="airlines">Hawaiian Airlines</p></th>
+            <th>7:35AM - 12:15PM
+            <p class="airlines">Alberta - Nova Scotia</p></th>
+            <th>1 stop
+            <p class="airlines">2h 50m in HNL</p></th>
+            <th>$663
+            <p class="airlines">round trip</p></th>
+          </tr>
+        </table>
+        <hr class="hr1"></hr>
+      </a>
+    </div>
+    <div class="inner-div3">
+      <a href="travels.html">
+        <table cellspacing="2">
+          <tr>
+            <td><img src="delta-airlines-logo-vector-7.png" width="100%"></td>
+            <th>16h 45m
+            <p class="airlines">Delta Airlines</p></th>
+            <th>9:00AM - 6:55PM
+            <p class="airlines">Northwest Territories - Manitoba</p></th>
+            <th>1 stop
+            <p class="airlines">4h 05m in ICN</p></th>
+            <th>$734
+            <p class="airlines">round trip</p></th>
+          </tr>
+        </table>
+        <hr class="hr1"></hr>
+      </a>
+    </div>
+   <div class="inner-div4">
+    <a href="travels.html">
+      <table cellspacing="2">
+        <tr>
+          <td><img src="photo.jpg" width="100%"></td>
+          <th>16h 45m
+          <p class="airlines">Air France</p></th>
+          <th>12:00AM - 3:00PM
+          <p class="airlines">Ontario - Quebec</p></th>
+          <th>1 stop
+          <p class="airlines">Non stop</p></th>
+          <th>$1079
+          <p class="airlines">round trip</p></th>
+        </tr>
+      </table>
+      <hr class="hr1"></hr>
+    </a>
+  </div>
+    <!-- <div class="inner-div5">
+        <img src="img5.png" width="1000px">
+    </div>
+    <div class="inner-div6">
+        <img src="img6.png" width="1000px">
+    </div>
+    <div class="inner-div7">
+        <img src="img7.png" width="1000px">
+    </div>
+    <div class="inner-div8">
+        <img src="img8.png" width="1000px">
+    </div>
+    <div class="inner-div9">
+        <img src="img9.png" width="1000px">
+    </div>
+    <div class="inner-div10">
+        <img src="img10.png" width="1000px">
+    </div>  -->
+    </div>
+
+  <a href=""><button class="search">Show Flights</button></a>
+  <div class="x" >
+    <p class="price"><u>Price Rating</u></p>
+    <p class="content">We recommend booking soon. The average cost of this flight is $750, but could rise 18% to $885 in two weeks.
+
+Tripma analyzes thousands of flights, prices, and trends to ensure you get the best deal.</p>
+  </div>
+  <div class="image-map">
+    <img src="map-img.png" width="1000px" height="200px">
+  </div>
+  <p class="places">Find places to stay in Japan</p>
+  <div>
+  <div class="hotel1 gradient-border">
+    <img src="hotel1.png" width=410.67px" height="397px">
+    <p style="text-align:center">Hotel Kaneyamaen and Bessho SASA</p>
+    <p class="normal-text">Located at the base of Mount Fuji, Hotel Kaneyamaen is a traitional japanese ryokan with a modern twist. Enjoy a private onsen bath and a private multi-course kaiseki dinner.</p>
+  </div>
+  <div class="hotel2 gradient-border">
+    <img src="hotel2.png"  width=410.67px" height="397px">
+    <p style="text-align:center;">Hotel The Flag</p>
+    <p class="normal-text">Make a stop in Osaka and stay at HOTEL THE FLAG, just a few minutes walk to experience the food culture surrounding Dontonbori. Just one minute away is the Shinsaibashi shopping street.</p>
+  </div>
+  <div class="hotel3 gradient-border">
+    <img src="hotel3.png" width=410.67px" height="397px">
+    <p style="text-align:center">9 Hours Shinjuku</p>
+    <p class="normal-text">Experience a truly unique stay in an authentic Japanese capsule hotel. 9 Hours Shinjuku is minutes from one of Japan's busiest train stations. Just take the NEX train from Narita airport!</p>
+  </div>
+  </div>
+  <p class="also-search">People in San Fransisco also search for</p>
+  <!-- <div> -->
+    <div class="hotel4 gradient-border">
+      <img src="hotel4.png" width=410.67px" height="397px">
+      <p class="Korea" style="text-align:center">Shangai, China</p>
+      <p class="normal-text">An international city rich in culture.</p>
+    </div>
+    <div class="hotel5 gradient-border">
+      <img src="hotel5.png" width=410.67px" height="397px">
+      <p class="Korea" style="text-align:center">Nairobi, Kenya</p>
+      <p class="normal-text">Dubbed the Safari Capital of the world.</p>
+    </div>
+    <div class="hotel6 gradient-border">
+      <img src="hotel6.png" width=410.67px" height="397px">
+      <p class="Korea" style="text-align:center;">Seoul, South Korea</p>
+      <p class="normal-text">This modern city is a traveler's dream</p>
+    </div>
+    <div class="">
+
+    </div>
+
+    <!-- <p class="departing-phrase"><u> Entered Details </u></p/>
+    <p id="demo" style="margin-left: 4%;"></p> -->
+  <!-- </div> -->
+<!-- <br></br> <br></br>
+  <form>
+     <input type="text" id="number" value="0"/>
+     <input type="button" class="search" onclick="incrementValue()" value="Increase" />
+ </form> -->
+<br><br>
+  <script>
+
+  function populateSelect() {
+      // THE JSON ARRAY.
+      var birds = [{
+          "name": "Alberta",
+          "abbreviation": "AB"
+        },
+        {
+          "name": "British Columbia",
+          "abbreviation": "BC"
+        },
+        {
+          "name": "Manitoba",
+          "abbreviation": "MB"
+        },
+        {
+          "name": "New Brunswick",
+          "abbreviation": "NB"
+        },
+        {
+          "name": "Newfoundland and Labrador",
+          "abbreviation": "NL"
+        },
+        {
+          "name": "Nova Scotia",
+          "abbreviation": "NS"
+        },
+        {
+          "name": "Northwest Territories",
+          "abbreviation": "NT"
+        },
+        {
+          "name": "Nunavut",
+          "abbreviation": "NU"
+        },
+        {
+          "name": "Ontario",
+          "abbreviation": "ON"
+        },
+        {
+          "name": "Prince Edward Island",
+          "abbreviation": "PE"
+        },
+        {
+          "name": "Quebec",
+          "abbreviation": "QC"
+        },
+        {
+          "name": "Saskatchewan",
+          "abbreviation": "SK"
+        },
+        {
+          "name": "Yukon",
+          "abbreviation": "YT"
+        },
+      ];
+
+
+      var ele = document.getElementById('sel');
+      for (var i = 0; i < birds.length; i++) {
+          // POPULATE SELECT ELEMENT WITH JSON.
+          ele.innerHTML = ele.innerHTML +
+              '<option value="' + birds[i]['abbreviation'] + '">' + birds[i]['name'] + '</option>';
+      }
+
+      var ele = document.getElementById('sel1');
+      for (var i = 0; i < birds.length; i++) {
+          // POPULATE SELECT ELEMENT WITH JSON.
+          ele.innerHTML = ele.innerHTML +
+              '<option value="' + birds[i]['abbreviation'] + '">' + birds[i]['name'] + '</option>';
+      }
+  }
+
+  function show(ele) {
+      // GET THE SELECTED VALUE FROM <select> ELEMENT AND SHOW IT.
+      var msg = document.getElementById('msg');
+      msg.innerHTML = 'Selected Bird: <b>' + ele.options[ele.selectedIndex].text + '</br> </br>' +
+          'ID: <b>' + ele.value + '</b>';
+  }
+  populateSelect()
+
+  function incrementValue()
+      {
+          var value = parseInt(document.getElementById('number').value, 10);
+          value = isNaN(value) ? 0 : value;
+          value++;
+          document.getElementById('number').value = value;
+      }
+  </script>
+</body>
